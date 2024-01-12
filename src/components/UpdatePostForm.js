@@ -17,7 +17,7 @@ export default function UpdatePostForm() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3000/posts');
+            const response = await fetch('https://blog-api-qdjr.onrender.com/posts');
             if (!response.ok) {
               throw new Error('Network response was not ok.');
             }
