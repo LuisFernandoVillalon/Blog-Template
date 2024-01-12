@@ -15,7 +15,7 @@ export default function UpdatePostForm() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch('http://localhost:3000/posts/'+id+'/comments');
+            const response = await fetch('https://blog-api-qdjr.onrender.com/posts/'+id+'/comments');
             if (!response.ok) {
               throw new Error('Network response was not ok.');
             }
@@ -55,7 +55,7 @@ export default function UpdatePostForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch('http://localhost:3000/posts/'+id+'/comments/'+commentid, {
+          const response = await fetch('https://blog-api-qdjr.onrender.com/posts/'+id+'/comments/'+commentid, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

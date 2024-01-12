@@ -21,7 +21,7 @@ export default function PostForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch('http://localhost:3000/posts/'+id+'/comments', {
+          const response = await fetch('https://blog-api-qdjr.onrender.com/posts/'+id+'/comments', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

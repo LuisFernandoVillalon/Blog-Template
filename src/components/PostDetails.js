@@ -13,7 +13,7 @@ export default function PostDetails() {
   
   const deleteComment = async (data) => {
     try {
-      const response = await fetch(`http://localhost:3000/posts/${id}/comments/${data._id}`, {
+      const response = await fetch(`https://blog-api-qdjr.onrender.com/posts/${id}/comments/${data._id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json', 
