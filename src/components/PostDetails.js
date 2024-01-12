@@ -38,7 +38,7 @@ export default function PostDetails() {
   const deletePost = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:3000/posts/${id}`, {
+      const response = await fetch(`https://blog-api-qdjr.onrender.com/posts/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json', 
@@ -73,7 +73,7 @@ export default function PostDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/posts/'+id+'/comments');
+        const response = await fetch('https://blog-api-qdjr.onrender.com/posts/'+id+'/comments');
         if (!response.ok) {
            throw new Error('Network response was not ok.');
         }
@@ -92,7 +92,7 @@ export default function PostDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3000/posts/'+id);
+        const response = await fetch('https://blog-api-qdjr.onrender.com/posts/'+id);
         if (!response.ok) {
           throw new Error('Network response was not ok.');
         }
