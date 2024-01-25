@@ -28,7 +28,7 @@ export default function PostDetails() {
       }
       // Handle success if needed
       console.log('Item deleted successfully');
-      window.location.reload();
+      navigate("/");
     } catch(error) {
       // Handle error if any
       console.error('There was a problem deleting the item:', error);
