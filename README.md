@@ -11,3 +11,4 @@ and comments, as well as, creating users.
 JavaScript, CSS, React.js, Routes, API, forms, REST 
 
 # Live Preview
+[screen-capture.webm](https://github.com/LuisFernandoVillalon/Blog-Template/assets/104875261/e09771f7-c78e-445e-969f-72096dce2433)
